@@ -28,3 +28,14 @@ I will aim to make this app publicly available too, but optional (ie. not requir
 2. Add your firebase config variables to `.env`
 3. `npm install`
 4. `npm run dev`
+
+### Credits
+
+This project is inspired or powered by these people or projects so I want to thank them
+
+- [Vue](https://github.com/vuejs/vue) great work
+- [Bulma](https://github.com/jgthms/bulma) A modern CSS framework based on Flexbox
+- [vue-admin](https://github.com/vue-bulma/vue-admin) for laying the foundations
+- [VuexFire](https://github.com/posva/vuexfire) for work integrating Vuex & Firebase
+- [vee-validate](https://github.com/baianat/vee-validate) for making form validation in Vue so easy
+- [Firebase](https://firebase.google.com/)
