@@ -18,8 +18,11 @@ A lot of work has been done in a private repository and I'm currently in the pro
 
 ### Installation (Proposed method, not yet implemented)
 
+**NOTE: This app assumes you have a working Firebase instance with at least one of the auth providers; Google, Facebook, Github or Password enabled.**
+
 1. Update `config/firebase.env.js` with your firebase config variables
-3. `npm install`
+2. `npm install`
+3.  Open `node_modules/bulma/sass/utilities/mixins.sass` and add `@import './variables'` to first line.  (issue with `Bulma 0.5.0`)
 4. `npm run dev`
 
 ### Additional work
