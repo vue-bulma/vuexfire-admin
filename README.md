@@ -25,6 +25,12 @@ A lot of work has been done in a private repository and I'm currently in the pro
 3.  Open `node_modules/bulma/sass/utilities/mixins.sass` and add `@import './variables'` to first line.  (issue with `Bulma 0.5.0`)
 4. `npm run dev`
 
+### WARNING !!!
+
+THIS APP **SETS** FIREBASE REFS `/users` AND '/notes'!!!!
+
+If you already have data at these refs, be sure to change the ref names in the file `/client/firebase-setup/ref-types.js`.  Otherwise, it will most likely be overwritten.
+
 ### Additional work
 
 I have a companion node.js server app that runs on heroku.  It watches the firebase database and performs database actions using firebase-admin sdk.
