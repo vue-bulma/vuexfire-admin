@@ -5,7 +5,7 @@ This project aims to be a template for using Firebase as a backend, and vue-admi
 
 A lot of work has been done in a private repository and I'm currently in the progress of migrating this across to this public repo.
 
-###Current features developed (to be migrated here):
+### Current features developed (to be migrated here):
 
 - Vuexfire for Firebase integration
 - Firebase auth
