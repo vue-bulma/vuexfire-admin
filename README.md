@@ -16,12 +16,6 @@ A lot of work has been done in a private repository and I'm currently in the pro
 - A User dashboard
 - A basic User Notes taking feature, where completed / incompleted notes are shown on the User dashboard. Along with new note form that accepts a title, and wysiwyg body field (Quill)
 
-### Additional work
-
-I have a companion node.js server app that runs on heroku.  It watches the firebase database and performs database actions using firebase-admin sdk.
-
-I will aim to make this app publicly available too, but optional (ie. not required for vuexfire-admin to work).
-
 ### Installation (Proposed method, not yet implemented)
 
 1. Rename `CHANGEME.env` to `.env`
@@ -29,6 +23,13 @@ I will aim to make this app publicly available too, but optional (ie. not requir
 3. `npm install`
 4. `npm run dev`
 
+### Additional work
+
+I have a companion node.js server app that runs on heroku.  It watches the firebase database and performs database actions using firebase-admin sdk.
+
+I will aim to make this app publicly available too, but optional (ie. not required for vuexfire-admin to work).
+
+---
 ### Credits
 
 This project is inspired or powered by these people or projects so I want to thank them
