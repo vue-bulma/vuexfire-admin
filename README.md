@@ -21,3 +21,10 @@ A lot of work has been done in a private repository and I'm currently in the pro
 I have a companion node.js server app that runs on heroku.  It watches the firebase database and performs database actions using firebase-admin sdk.
 
 I will aim to make this app publicly available too, but optional (ie. not required for vuexfire-admin to work).
+
+### Installation (Proposed method, not yet implemented)
+
+1. Rename `CHANGEME.env` to `.env`
+2. Add your firebase config
+3. `npm install`
+4. `npm run dev`
