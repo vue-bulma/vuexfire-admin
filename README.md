@@ -18,8 +18,7 @@ A lot of work has been done in a private repository and I'm currently in the pro
 
 ### Installation (Proposed method, not yet implemented)
 
-1. Rename `CHANGEME.env` to `.env`
-2. Add your firebase config variables to `.env`
+1. Update `config/firebase.env.js` with your firebase config variables
 3. `npm install`
 4. `npm run dev`
 
