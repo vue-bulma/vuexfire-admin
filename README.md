@@ -5,7 +5,7 @@ This project aims to be a template for using Firebase as a backend, and vue-admi
 
 A lot of work has been done in a private repository and I'm currently in the progress of migrating this across to this public repo.
 
-### Current features developed (to be migrated here):
+### Current features developed:
 
 - Vuexfire for Firebase integration
 - Firebase auth
@@ -16,7 +16,7 @@ A lot of work has been done in a private repository and I'm currently in the pro
 - A User dashboard
 - A basic User Notes taking feature, where completed / incompleted notes are shown on the User dashboard. Along with new note form that accepts a title, and wysiwyg body field (Quill)
 
-### Installation (Proposed method, not yet implemented)
+### Installation
 
 **NOTE: This app assumes you have a working Firebase instance with at least one of the auth providers; Google, Facebook, Github or Password enabled.**
 
