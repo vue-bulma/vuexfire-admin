@@ -61,7 +61,7 @@ router.beforeEach((route, redirect, next) => {
         query: { redirect: route.fullPath }
       })
       store.dispatch('setNotification', {
-        'message': 'Log in ya prick.',
+        'message': 'You are not logged in.',
         'type': 'danger'
       })
     } else {
