@@ -27,7 +27,7 @@ A lot of work has been done in a private repository and I'm currently in the pro
 
 ### WARNING !!!
 
-**THIS APP **SETS** FIREBASE REFS `/users` AND '/notes' !!!! **
+THIS APP **SETS** FIREBASE REFS `/users` AND `/notes` !!!!
 
 If you already have data at these refs, be sure to change the ref names in the file `/client/firebase-setup/ref-types.js`.  Otherwise, it will most likely be overwritten.
 
