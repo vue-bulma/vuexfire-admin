@@ -51,6 +51,9 @@ export default {
       user: 'user',
       notes: 'notes'
     })
+  },
+  mounted () {
+    this.$store.dispatch('initNotesRef')
   }
 }
 </script>

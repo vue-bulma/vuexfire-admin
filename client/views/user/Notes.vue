@@ -2,7 +2,7 @@
   <div class="notes">
       <div class="loadingDog">
         <transition name="loadingDog">
-          <p v-if="loadingNotes === true" class="title"><img src="~assets/480.gif" /></p>
+        <p v-if="loadingNotes === true" class="title"><img src="~assets/480.gif" /></p> 
         </transition>
       </div>
       <!-- Incomplete notes -->
@@ -125,7 +125,8 @@ export default {
       })
     },
     ...mapActions([
-      'removeNote'
+      'removeNote',
+      'isLoading'
     ])
   },
   computed: {
@@ -146,10 +147,7 @@ export default {
     })
   },
   beforeCreate () {
-  },
-  mounted () {
     this.$store.dispatch('isLoading')
-    this.$store.dispatch('initNotesRef')
   },
   updated () {
     this.$store.dispatch('isLoading')
