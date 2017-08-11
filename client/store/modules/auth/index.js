@@ -133,8 +133,15 @@ const actions = {
           dispatch('setNotification', getters.defaultNotifications.accountExistsDifferentWithCredential)
           // If you are using multiple auth providers on your app you should handle linking
           // the user's accounts here.
-        } else {
+        } else if (error.code === 'auth/wrong-password') {
           console.error(error)
+          dispatch('setNotification', {
+            type: 'danger',
+            message: error.message,
+            duration: 5000
+          })
+        } else {
+          console.log(error)
         }
         // [END_EXCLUDE]
       })
@@ -335,7 +342,8 @@ const actions = {
         } else {
           console.log('User ref does not exist. Creating...')
           // Update firebase ref users/uid/loggedIn boolean to true (this also creates the parent UID object)
-          firebase.database().ref('users/').child(user.uid).update({'loggedIn': 'true'}).catch(onReject).then(function () {
+          const userRef = firebase.database().ref('users/').child(user.uid)
+          userRef.update({'loggedIn': 'true', 'uid': user.uid}).catch(onReject).then(function () {
             console.log('User ref created.')
           })
         }
@@ -467,8 +475,15 @@ const actions = {
           dispatch('setNotification', getters.defaultNotifications.accountExistsDifferentWithCredential)
           // If you are using multiple auth providers on your app you should handle linking
           // the user's accounts here.
-        } else {
+        } else if (error.code === 'auth/wrong-password') {
           console.error(error)
+          dispatch('setNotification', {
+            type: 'danger',
+            message: error.message,
+            duration: 5000
+          })
+        } else {
+          console.log(error)
         }
         // [END_EXCLUDE]
       })
