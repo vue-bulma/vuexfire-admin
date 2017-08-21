@@ -25,6 +25,35 @@ A lot of work has been done in a private repository and I'm currently in the pro
 3.  Open `node_modules/bulma/sass/utilities/mixins.sass` and add `@import './variables'` to first line.  (issue with `Bulma 0.5.0`)
 4. `npm run dev`
 
+### Firebase Rules
+This app requires the following firebase rules (for notes facility)
+
+``````
+{
+  "rules": {
+    // ".read": true,
+    // ".write": false,
+    "users": {
+      ".indexOn": "ID",
+      "$uid": {
+        ".validate": "$uid === auth.uid",
+        // grants write access to the owner of this user account
+        // whose uid must exactly match the key ($uid)
+        ".write": "$uid === auth.uid",
+        ".read": "auth != null && auth.uid == $uid"
+      }
+    },
+    "notes": {
+      ".indexOn": "uid",
+        ".read" : "data.child(auth.uid).exists()",
+      "$uid": {
+        ".write": "$uid == auth.uid",
+      }
+    }
+  }
+}
+``````
+
 ### WARNING !!!
 
 THIS APP **SETS** FIREBASE REFS `/users` AND `/notes` !!!!
