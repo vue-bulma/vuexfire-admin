@@ -48,7 +48,7 @@
     "mdi": "^1.8.36",
     "plotly.js": "^1.24.2",
     "quill-delta-to-html": "^0.3.0",
-    "vee-validate": "^2.0.0-rc.8",
+    "vee-validate": "^2.0.0-rc.13",
     "vue": "^2.2.2",
     "vue-axios": "^2.0.1",
     "vue-bulma-brace": "^0.1.0",

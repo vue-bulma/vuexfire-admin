@@ -5,8 +5,8 @@
       <div class="control has-icon has-icon-right">
         <input
         name="password"
-        v-validate="'required|min:8|confirmed:confirm'"
-        class="is-small"
+        v-validate="'required|min:8'"
+        class="is-small password"
         :class="{'input': true, 'is-danger': errors.has('password') }" type="password" placeholder="Password">
         <span v-show="errors.has('password')" class="icon is-small">
           <i class="fa fa-warning"></i>
@@ -19,9 +19,9 @@
         <input
         name="confirm"
         v-model="confirmedPass"
-        v-validate="'required|min:8|confirmed:password'"
+        v-validate="'required|min:8|confirmed:.password'"
         v-on:keyup.13="setConfirmedPass"
-        class="is-small"
+        class="is-small confirm-password"
         :class="{'input': true, 'is-danger': errors.has('confirm') }" type="password" placeholder="Confirm">
         <span v-show="errors.has('confirm')" class="icon is-small">
           <i class="fa fa-warning"></i>
