@@ -22,8 +22,7 @@ A lot of work has been done in a private repository and I'm currently in the pro
 
 1. Update `config/firebase.env.js` with your firebase config variables
 2. `npm install`
-3.  Open `node_modules/bulma/sass/utilities/mixins.sass` and add `@import './variables'` to first line.  (issue with `Bulma 0.5.0`)
-4. `npm run dev`
+3. `npm run dev`
 
 ### Firebase Rules
 This app requires the following firebase rules (for notes facility)
